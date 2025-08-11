@@ -1,3 +1,65 @@
-main {
-  display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+main {
+  display: grid;
+  gap: 1rem;
+}
+
+.episode-list {
+  display: grid;
+  width: 80%;
+  list-style-type: none;
+  gap: 0.5rem;
+}
+
+.episode-list li {
+  border: 2px solid #ccc;
+  padding: 0.5rem;
+}
+
+.episode-list li:hover {
+  cursor: pointer;
+  font-style: italic;
+  background: rgb(68, 124, 170);
+}
+
+.episode-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+body {
+  padding: 2rem;
+}
+
+@media (width >= 500px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* .roster ul {
+  display: grid;
+  gap: 1ch;
+
+  list-style-type: none;
+  padding: 0.25rem;
+}
+
+.roster li {
+  padding: 1ch;
+  border: 1px solid #ccc;
+}
+
+.roster li:hover {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.details {
+  padding: 0.25rem;
+} */

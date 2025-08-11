@@ -55,7 +55,7 @@ export default function App() {
               /* create an LI to set the episode title in each LI and make an event listener in the LI
                  "onclick" to update the selectedEpisode state (setSelectedEpisode(episode). also set
                  a key with the episode id(episode.id)*/
-      <section>
+      <section className="episode-list">
         <h2>Episodes</h2>
         <ul className="episode-list"></ul>
         {episodes.map((episode) => (
